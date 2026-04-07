@@ -21,13 +21,13 @@ pipeline {
         }
 
         stage('Report') {
-            steps {
-                publishHTML([
-                    reportDir: 'reports',
-                    reportFiles: 'extent-report.html',
-                    reportName: 'Test Report'
-                ])
-            }
-        }
+    steps {
+        publishHTML([
+            reportDir: 'target',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Extent Report'
+        ])
+    }
+}
     }
 }
