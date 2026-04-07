@@ -10,7 +10,11 @@ import io.cucumber.testng.CucumberOptions;
         "pretty",
         "html:target/cucumber-report.html",
         "json:target/cucumber.json"
+         
     }
 )
-public class TestRunner extends AbstractTestNGCucumberTests {
+
+public class TestRunner extends AbstractTestNGCucumberTests 
+{
+	
 }
